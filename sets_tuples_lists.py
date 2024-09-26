@@ -22,6 +22,9 @@ for car in cars:
     cars.append(carRequest)
     print(cars)
     print(len(cars))
+    print(cars)
+    if len(cars) > 10:
+        break
 
 # collection = single "variable" used to storre multiple values
 # list = [] ordered and changeable, Duplicates OK
@@ -47,3 +50,16 @@ print(fruits)
 fruits[0] = "pineapple" # reassign values using that
 for fruit in fruits:
     print(fruit)
+
+# challenge
+# create a list of friends
+# make sure the initial list is none
+friends = []
+# add a new friend to the list, add at least 5 friends
+
+# remove a friend from the list
+# insert a friend at a specific index
+# print the list of friends
+# loop through the list and print the friends name
+# see if a particular friend is in the list (boolean value)
+# if list > 10 break
