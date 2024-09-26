@@ -15,16 +15,16 @@ cars.remove("maserati")
 
 # looping through list
 # otherwise ca;;ed iteration through the list
-for car in cars:
-    # print(len(car))
-    # print(car)
-    carRequest = input("add a new car please: ")
-    cars.append(carRequest)
-    print(cars)
-    print(len(cars))
-    print(cars)
-    if len(cars) > 10:
-        break
+# for car in cars:
+#     # print(len(car))
+#     # print(car)
+#     carRequest = input("add a new car please: ")
+#     cars.append(carRequest)
+#     print(cars)
+#     print(len(cars))
+#     print(cars)
+#     if len(cars) > 10:
+#         break
 
 # collection = single "variable" used to storre multiple values
 # list = [] ordered and changeable, Duplicates OK
@@ -50,12 +50,20 @@ print(fruits)
 fruits[0] = "pineapple" # reassign values using that
 for fruit in fruits:
     print(fruit)
-
 # challenge
 # create a list of friends
 # make sure the initial list is none
 friends = []
 # add a new friend to the list, add at least 5 friends
+for friend in friends:
+    friendRequest = input("Who would you like to friend: ")
+    friends.append(friendRequest)
+    print(friends)
+    if friends > 5:
+        removeFriend = input("Who do you want to remove from the list")
+        friends.remove(removeFriend)
+        print(friends)
+
 
 # remove a friend from the list
 # insert a friend at a specific index
