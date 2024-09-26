@@ -3,7 +3,7 @@
 # Given the string magic = 'abracadabra',
 magic = "abracadabra"
 # a. Retrieve the 5th character.
-print(magic[5])
+print(magic[4])
 # b. Retrieve the second to last character.
 print(magic[-2])
 # c. Find the first occurrence of the letter 'c'.
