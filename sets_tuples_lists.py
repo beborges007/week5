@@ -1,20 +1,46 @@
+cars = ["bmw","maserati","audi","mercedes","ferrari"]
+print(f"these are the list of cars {cars}")
+print(f"the first car is {cars[0]}")
+print(f"the last car is {cars[-1]}")
+
+cars[0] = "toyota"
+print(f"the first car is {cars[0]}")
+
+print(f"the last caris {cars[-1]}")
+cars[-1] = "lamborghini"
+print(f"the last car is {cars[-1]}")
+cars.append("bugatti")
+print(cars)
+cars.remove("maserati")
+
+# looping through list
+# otherwise ca;;ed iteration through the list
+for car in cars:
+    # print(len(car))
+    # print(car)
+    carRequest = input("add a new car please: ")
+    cars.append(carRequest)
+    print(cars)
+    print(len(cars))
+
 # collection = single "variable" used to storre multiple values
 # list = [] ordered and changeable, Duplicates OK
 # set = {} unordered and immutable, but Add/Remove OK, no duplicates 
 # Tuple = () ordered and unchangeable, Duplicates OK, FASTER
 
 fruits = ["apple", "orange", "banana", "coconut", "kiwi", "plum", "avacado"]
-print(dir(fruits)) # prints methods that come with the function
-print(help(fruits)) # tells what each method does
+#print(dir(fruits)) # prints methods that come with the function
+#print(help(fruits)) # tells what each method does
 print(len(fruits))
 print("pineapple" in fruits)
 
-fruits.append("pineapple") # adds a value to the list
-fruits.remove("apple") # removes an item from the list
-fruits.insert(0, "pineapple") # inserts an item into a specific spot in the list
-fruits.sort() # sorts the list alphabetically
-fruits.reverse() # reverses the list order
-fruits.clear()
+print(fruits.index("coconut"))
+# fruits.append("pineapple") # adds a value to the list
+# fruits.remove("apple") # removes an item from the list
+# fruits.insert(0, "pineapple") # inserts an item into a specific spot in the list
+# fruits.sort() # sorts the list alphabetically
+# fruits.reverse() # reverses the list order
+# fruits.clear()
 
 print(fruits)
 
