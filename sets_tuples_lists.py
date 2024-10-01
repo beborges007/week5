@@ -29,7 +29,7 @@ cars.remove("maserati")
 # collection = single "variable" used to storre multiple values
 # list = [] ordered and changeable, Duplicates OK
 # set = {} unordered and immutable, but Add/Remove OK, no duplicates 
-# Tuple = () ordered and unchangeable, Duplicates OK, FASTER
+# tuple = () ordered and unchangeable, Duplicates OK, FASTER
 
 fruits = ["apple", "orange", "banana", "coconut", "kiwi", "plum", "avacado"]
 #print(dir(fruits)) # prints methods that come with the function
@@ -50,6 +50,69 @@ print(fruits)
 fruits[0] = "pineapple" # reassign values using that
 for fruit in fruits:
     print(fruit)
+
+fruits = {"apple", "orange", "banana", "coconut", "kiwi", "plum", "avacado"}
+
+# fruits.pop()      pops off the first element in each instance
+# fruits.clear()        clears the set
+# fruits.add("pineapple")       adds an element
+# fruits.remove("apple")        removes an element
+# print("apple" in fruits)      chacks if a specific element is in the set and will print a boolean
+
+print(fruits)
+
+# print(fruits[3])  doesn't work because sets are random and unordered.
+
+fruits = ("apple", "orange", "banana", "coconut", "kiwi", "plum", "avacado")
+
+# print(fruits.count("coconut"))
+# print(fruits.index("apple"))
+
+print(fruits)
+for fruit in fruits:
+    print(fruit)
+
+# -------------------------------------------------------------------------------------------------
+# Dictionaries = a collection of {key:value} pairs, ordered and changeable. no duplicates
+
+capitals = {
+    "USA": "Wahsington D.C.",
+    "India": "New Dehli",
+    "China": "Beijing",
+    "Russia": "Moscow"
+}
+
+# print(dir(capitals))
+# print(help(capitals))
+# print(capitals.get("Japan"))
+
+if capitals.get("Russia"):
+    print("the capital exists")
+else:
+    print("That doesn't exist")
+
+# capitals.update({"Germany": "Berlin"})
+# capitals.update({"USA": "Detroit"})
+# capitals.pop("China")
+# capitals.popitem()
+# capitals.clear()
+
+print(capitals)
+
+keys = capitals.keys()
+
+for key in capitals.keys():
+    print(key)
+
+values = capitals.values()
+for value in capitals.values():
+    print(value)
+
+items = capitals.items()
+for key, value in capitals.items():
+    print(f"{key}: {value}")
+# -------------------------------------------------------------------------------------------------
+    
 # challenge
 # create a list of friends
 # make sure the initial list is none
